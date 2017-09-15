@@ -117,11 +117,7 @@
   </properties>
 
   <distributionManagement>
-    <!--<repository>-->
-      <!--<id>central-releases-staging</id>-->
-      <!--<name>Central Releases - Staging</name>-->
-      <!--<url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>-->
-    <!--</repository>-->
+    <!--dist to mvn central under separate profile-->
     <repository>
       <id>activiti-enterprise-snapshots</id>
       <name>Activiti Snapshots</name>
@@ -775,7 +771,7 @@
           <artifactId>maven-release-plugin</artifactId>
           <version>${maven-release-plugin.version}</version>
           <configuration>
-            <releaseProfiles>sign</releaseProfiles>
+            <releaseProfiles>sign,distro</releaseProfiles>
             <autoVersionSubmodules>true</autoVersionSubmodules>
             <tagNameFormat>activiti-@{project.version}</tagNameFormat>
             <!-- Necessary until keycloak releases boot2 adaptor -->
@@ -1015,6 +1011,17 @@
           </plugin>
         </plugins>
       </build>
+    </profile>
+    <!-- publish to maven central-->
+    <profile>
+      <id>distro</id>
+      <distributionManagement>
+        <repository>
+          <id>central-releases-staging</id>
+          <name>Central Releases - Staging</name>
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+        </repository>
+      </distributionManagement>
     </profile>
   </profiles>
 
