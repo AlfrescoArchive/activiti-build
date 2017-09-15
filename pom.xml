@@ -117,11 +117,6 @@
   </properties>
 
   <distributionManagement>
-    <!--<repository>-->
-      <!--<id>central-releases-staging</id>-->
-      <!--<name>Central Releases - Staging</name>-->
-      <!--<url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>-->
-    <!--</repository>-->
     <repository>
       <id>activiti-enterprise-snapshots</id>
       <name>Activiti Snapshots</name>
@@ -775,11 +770,14 @@
           <artifactId>maven-release-plugin</artifactId>
           <version>${maven-release-plugin.version}</version>
           <configuration>
-            <releaseProfiles>sign</releaseProfiles>
+            <releaseProfiles>sign,distro</releaseProfiles>
             <autoVersionSubmodules>true</autoVersionSubmodules>
             <tagNameFormat>activiti-@{project.version}</tagNameFormat>
             <!-- Necessary until keycloak releases boot2 adaptor -->
             <allowTimestampedSnapshots>true</allowTimestampedSnapshots>
+            <checkModificationExcludes>
+              <checkModificationExclude>pom.xml</checkModificationExclude>
+            </checkModificationExcludes>
           </configuration>
         </plugin>
         <plugin>
@@ -1015,6 +1013,22 @@
           </plugin>
         </plugins>
       </build>
+    </profile>
+    <!-- publish to maven central-->
+    <profile>
+      <id>distro</id>
+      <distributionManagement>
+        <repository>
+        <id>central-releases-staging</id>
+        <name>Central Releases - Staging</name>
+        <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+        </repository>
+        <snapshotRepository>
+          <id>activiti-enterprise-snapshots</id>
+          <name>Activiti Snapshots</name>
+          <url>https://artifacts.alfresco.com/nexus/content/repositories/activiti-snapshots/</url>
+        </snapshotRepository>
+      </distributionManagement>
     </profile>
   </profiles>
 
