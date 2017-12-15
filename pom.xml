@@ -104,6 +104,7 @@
 
   <modules>
     <module>activiti-dependencies</module>
+    <module>activiti-form-dependencies</module>
   </modules>
 
   <repositories>
