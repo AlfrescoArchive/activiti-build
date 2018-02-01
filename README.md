@@ -10,6 +10,7 @@
        <img src='https://img.shields.io/hexpm/l/plug.svg' alt='license' />
   </a>
   <a href="https://cla-assistant.io/Activiti/activiti-build"><img src="https://cla-assistant.io/readme/badge/Activiti/activiti-build" alt="CLA assistant" /></a>
+  <a href="https://snyk.io/test/github/Activiti/activiti-build"><img src="https://snyk.io/test/github/Activiti/activiti-build/badge.svg" alt="Known Vulnerabilities" data-canonical-src="https://snyk.io/test/github/Activiti/activiti-build" style="max-width:100%;" /></a>
 
 </p>
 
