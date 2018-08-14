@@ -15,12 +15,14 @@
       <!-- Activiti Modules for managed dependencies -->
       <dependency>
         <groupId>org.activiti</groupId>
-        <artifactId>activiti-api</artifactId>
-        <version>${activiti.version}</version>
+        <artifactId>activiti-api-dependencies</artifactId>
+        <version>${activiti-api.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
       </dependency>
       <dependency>
         <groupId>org.activiti</groupId>
-        <artifactId>activiti-common-model-api</artifactId>
+        <artifactId>activiti-api-impl</artifactId>
         <version>${activiti.version}</version>
       </dependency>
       <dependency>
