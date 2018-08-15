@@ -26,13 +26,13 @@
         <version>${activiti.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.activiti</groupId>
-        <artifactId>activiti-common-model-api-impl</artifactId>
+        <groupId>org.activiti.api</groupId>
+        <artifactId>activiti-api-model-shared-impl</artifactId>
         <version>${activiti.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.activiti</groupId>
-        <artifactId>activiti-common-runtime-api-impl</artifactId>
+        <groupId>org.activiti.api</groupId>
+        <artifactId>activiti-api-runtime-shared-impl</artifactId>
         <version>${activiti.version}</version>
       </dependency>
       <dependency>
@@ -41,23 +41,23 @@
         <version>${activiti.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.activiti</groupId>
-        <artifactId>activiti-process-model-api-impl</artifactId>
+        <groupId>org.activiti.api</groupId>
+        <artifactId>activiti-api-process-model-impl</artifactId>
         <version>${activiti.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.activiti</groupId>
-        <artifactId>activiti-process-runtime-api-impl</artifactId>
+        <groupId>org.activiti.api</groupId>
+        <artifactId>activiti-api-process-runtime-impl</artifactId>
         <version>${activiti.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.activiti</groupId>
-        <artifactId>activiti-task-model-api-impl</artifactId>
+        <groupId>org.activiti.api</groupId>
+        <artifactId>activiti-api-task-model-impl</artifactId>
         <version>${activiti.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.activiti</groupId>
-        <artifactId>activiti-task-runtime-api-impl</artifactId>
+        <groupId>org.activiti.api</groupId>
+        <artifactId>activiti-api-task-runtime-impl</artifactId>
         <version>${activiti.version}</version>
       </dependency>
       <dependency>
