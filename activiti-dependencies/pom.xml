@@ -42,17 +42,7 @@
       </dependency>
       <dependency>
         <groupId>org.activiti</groupId>
-        <artifactId>activiti-process-model-api</artifactId>
-        <version>${activiti.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.activiti</groupId>
         <artifactId>activiti-process-model-api-impl</artifactId>
-        <version>${activiti.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.activiti</groupId>
-        <artifactId>activiti-process-runtime-api</artifactId>
         <version>${activiti.version}</version>
       </dependency>
       <dependency>
@@ -62,17 +52,7 @@
       </dependency>
       <dependency>
         <groupId>org.activiti</groupId>
-        <artifactId>activiti-task-model-api</artifactId>
-        <version>${activiti.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.activiti</groupId>
         <artifactId>activiti-task-model-api-impl</artifactId>
-        <version>${activiti.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.activiti</groupId>
-        <artifactId>activiti-task-runtime-api</artifactId>
         <version>${activiti.version}</version>
       </dependency>
       <dependency>
