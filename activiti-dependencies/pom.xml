@@ -32,11 +32,6 @@
       </dependency>
       <dependency>
         <groupId>org.activiti</groupId>
-        <artifactId>activiti-common-runtime-api</artifactId>
-        <version>${activiti.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.activiti</groupId>
         <artifactId>activiti-common-runtime-api-impl</artifactId>
         <version>${activiti.version}</version>
       </dependency>
