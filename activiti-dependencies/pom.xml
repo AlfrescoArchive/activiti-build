@@ -62,11 +62,6 @@
       </dependency>
       <dependency>
         <groupId>org.activiti</groupId>
-        <artifactId>activiti-cloud-process-model-api</artifactId>
-        <version>${activiti.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.activiti</groupId>
         <artifactId>activiti-cloud-process-model-api-impl</artifactId>
         <version>${activiti.version}</version>
       </dependency>
