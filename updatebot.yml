@@ -1,0 +1,9 @@
+git:
+- name: ryandawsonuk/activiti-build
+  cloneUrl: git@github.com:ryandawsonuk/activiti-build.git
+github:
+  organisations:
+  - name: ryandawsonuk
+    includes:
+    - activiti-api*
+    - Activiti
