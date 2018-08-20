@@ -71,9 +71,11 @@ pipeline {
           branch 'develop'
         }
         steps {
+          container('maven') {
            // now lets update any dependent projects with this new release
            // using the local file system as the tagged source code with versions
            updateBotPush()
+          }
         }
       }
 //      stage('Promote to Environments') {
