@@ -61,20 +61,9 @@ pipeline {
 
             sh 'export VERSION=`cat VERSION`'// && skaffold build -f skaffold.yaml'
 
+            updateBotPush()
 
         //    sh "jx step post build --image $DOCKER_REGISTRY/$ORG/$APP_NAME:\$(cat VERSION)"
-          }
-        }
-      }
-      stage('UpdateBot') {
-        when {
-          branch 'develop'
-        }
-        steps {
-          container('maven') {
-           // now lets update any dependent projects with this new release
-           // using the local file system as the tagged source code with versions
-           updateBotPush()
           }
         }
       }

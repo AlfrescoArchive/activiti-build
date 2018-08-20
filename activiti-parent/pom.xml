@@ -22,8 +22,6 @@
     <!-- JVM params for test execution -->
     <argLine>-Duser.language=en</argLine>
     <!-- dependency -->
-    <activiti.version>7.0.0-SNAPSHOT</activiti.version>
-    <activiti-api.version>${activiti.version}</activiti-api.version>
     <batik.version>1.10</batik.version>
     <commons-email.version>1.5</commons-email.version>
     <commons-fileupload.version>1.3.3</commons-fileupload.version>
