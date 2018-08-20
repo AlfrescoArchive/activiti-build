@@ -6,7 +6,6 @@
     <groupId>org.activiti</groupId>
     <artifactId>activiti-build</artifactId>
     <version>7.0.0-SNAPSHOT</version>
-    <relativePath>../activiti-dependencies</relativePath>
   </parent>
   <artifactId>activiti-parent</artifactId>
   <packaging>pom</packaging>
