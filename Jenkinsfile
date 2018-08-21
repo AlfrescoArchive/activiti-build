@@ -61,7 +61,7 @@ pipeline {
             sh 'export VERSION=`cat VERSION`'// && skaffold build -f skaffold.yaml'
 
             sh "git config --global credential.helper store"
-            updateBotPush()
+            sh "updateBotPush()"
 
         //    sh "jx step post build --image $DOCKER_REGISTRY/$ORG/$APP_NAME:\$(cat VERSION)"
           }
