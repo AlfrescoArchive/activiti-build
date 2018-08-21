@@ -61,7 +61,8 @@ pipeline {
             sh 'export VERSION=`cat VERSION`'// && skaffold build -f skaffold.yaml'
 
             sh "git config --global credential.helper store"
-            sh "mvn -B io.jenkins.updatebot:updatebot-maven-plugin:1.1.16:export -DdestFile=./target/updatebot-versions.yaml -DupdateBotYaml=.updatebot.yml"
+
+            sh "jx step git credentials"
             sh "updatebot push"
 
         //    sh "jx step post build --image $DOCKER_REGISTRY/$ORG/$APP_NAME:\$(cat VERSION)"
