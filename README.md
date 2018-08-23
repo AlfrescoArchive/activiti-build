@@ -40,5 +40,5 @@ For example:
     <artifactId>activiti-engine</artifactId>
 </dependency>
 ```
-
+ 
 Versions are going to be handled by maven.
