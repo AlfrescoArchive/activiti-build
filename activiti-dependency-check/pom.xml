@@ -3,9 +3,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.activiti</groupId>
-    <artifactId>activiti-build</artifactId>
-    <version>7.0.0-SNAPSHOT</version>
+    <groupId>org.activiti.build</groupId>
+    <artifactId>activiti-parent</artifactId>
+    <version>7.0.1</version>
   </parent>
   <artifactId>activiti-dependency-check</artifactId>
   <packaging>pom</packaging>
