@@ -3,4 +3,6 @@ github:
   - name: ryandawsonuk
     repositories:
     - name: activiti-api
+      branch: develop
     - name: Activiti
+      branch: develop
