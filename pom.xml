@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.activiti.build</groupId>
   <artifactId>activiti-parent</artifactId>
-  <version>7.0.45</version>
+  <version>7.0.0.Beta4</version>
   <packaging>pom</packaging>
   <name>Activiti :: Parent</name>
   <description>${project.name}</description>
@@ -101,7 +101,7 @@
     <argLine>-Duser.language=en</argLine>
 
     <!-- dependency -->
-    <activiti-build.version>${project.version}</activiti-build.version>
+    <activiti-build.version>7.0.0.Beta4</activiti-build.version>
     <skipITs>true</skipITs>
 
   </properties>
