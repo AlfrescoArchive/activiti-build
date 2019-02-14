@@ -3,15 +3,15 @@ github:
   - name: activiti 
     repositories:
     - name: activiti-api
-      branch: develop
+      branch: 7.0.x
       useSinglePullRequest: true
     - name: activiti-core-common
-      branch: develop      
+      branch: 7.0.x      
       useSinglePullRequest: true
     - name: activiti
-      branch: develop
+      branch: 7.0.x
       useSinglePullRequest: true
     - name: activiti-dependencies
-      branch: develop
+      branch: 7.0.x
       useSinglePullRequest: true
       
