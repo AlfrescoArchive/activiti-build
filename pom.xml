@@ -62,7 +62,7 @@
   </ciManagement>
   <properties>
     <!-- plugins -->
-    <asm.version>6.2</asm.version>
+    <asm.version>7.1</asm.version>
     <assertj-assertions-generator-maven-plugin.version>2.2.0</assertj-assertions-generator-maven-plugin.version>
     <build-helper-maven-plugin.version>3.0.0</build-helper-maven-plugin.version>
     <dependency-check-maven.version>3.1.2</dependency-check-maven.version>
