@@ -63,7 +63,7 @@
   <properties>
     <!-- plugins -->
     <asm.version>6.2</asm.version>
-    <assertj-assertions-generator-maven-plugin.version>2.0.0</assertj-assertions-generator-maven-plugin.version>
+    <assertj-assertions-generator-maven-plugin.version>2.2.0</assertj-assertions-generator-maven-plugin.version>
     <build-helper-maven-plugin.version>3.0.0</build-helper-maven-plugin.version>
     <dependency-check-maven.version>3.1.2</dependency-check-maven.version>
     <exec-maven-plugin.version>1.6.0</exec-maven-plugin.version>
@@ -124,7 +124,7 @@
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>versions-maven-plugin</artifactId>
-          <version>2.5</version>
+          <version>2.7</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -474,6 +474,29 @@
     </plugins>
   </build>
   <profiles>
+    <profile>
+      <id>attach-sources</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>   
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-source-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>attach-sources</id>
+                <phase>deploy</phase>
+                <goals>
+                  <goal>jar-no-fork</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
     <!-- Activate integration tests -->
     <profile>
       <id>integration-test</id>
